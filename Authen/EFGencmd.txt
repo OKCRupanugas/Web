@@ -1,0 +1,1 @@
+dotnet ef dbcontext scaffold "data source=INV6316;initial catalog=ISKCON_OKC;integrated security=True;MultipleActiveResultSets=True;" Microsoft.EntityFrameworkCore.SqlServer -o SharedModels -f

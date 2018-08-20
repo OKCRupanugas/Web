@@ -1,0 +1,17 @@
+.center-content {
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: rgba(793, 861, 836, 0.2)!important;
+    }
+    .mycolor{
+    color: darkgoldenrod
+    }
+
+    .center-fields {
+       
+        
+        align-content: center;
+        
+        }

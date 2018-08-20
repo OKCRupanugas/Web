@@ -1,0 +1,117 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-transparent pull-right" color-on-scroll="500" >
+        <div class="paddingtop15 pull-left" >
+               <a [routerLink]="['/home']" > <img style="width: 200px; background:none !important;" src="assets/img/Iskcon/Prabhupada-Iskcon.jpg"  alt=""> </a>
+            </div>   
+   
+    <div class="container ">
+        <div class="navbar-translate">
+            <!-- <a class="navbar-brand" href="https://www.creative-tim.com">Paper Kit 2 Angular</a> -->
+            <button class="navbar-toggler navbar-burger" type="button" >
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-expand "  id="navbarToggler">
+            
+            <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item pull-right" *ngIf="!isDocumentation()">
+                            <a class="nav-link" href="#pk">Home </a>                       
+                            
+                        </li>
+
+                        <li class="nav-item pull-right" *ngIf="!isDocumentation()">
+                                <a class="nav-link" href="#pk">About Us </a>                       
+                                
+                            </li>
+
+                            <li class="nav-item pull-right" *ngIf="!isDocumentation()">
+                                    <div ngbDropdown class="d-inline-block dropdown">
+                                            <a class="nav-link" id="services" ngbDropdownToggle>Services</a>
+                                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+                                              <a class="dropdown-item">Sunday Mangal Arti</a>
+                                              <a class="dropdown-item">Sunday School</a>
+                                              <a class="dropdown-item">Sunday Feast</a>
+                                            
+                                            </div>
+                                          </div>                    
+                                    
+                                </li>
+                    <li class="nav-item pull-right" *ngIf="!isDocumentation()">
+                            <a class="nav-link" href="#pk">Visiting Vaishnavas  </a>                       
+                            
+                        </li>
+                        <li class="nav-item pull-right" *ngIf="!isDocumentation()">
+                                <div ngbDropdown class="d-inline-block dropdown">
+                                        <a class="nav-link" id="events" ngbDropdownToggle>Events</a>
+                                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+                                          <a class="dropdown-item">Up Comming Events</a>
+                                          <a class="dropdown-item">Event Calender</a>
+                                          <a class="dropdown-item">Yatras</a>
+                                        
+                                        </div>
+                                      </div>                    
+                                
+                            </li>
+                            <li class="nav-item pull-right" *ngIf="!isDocumentation()">
+                                    <a class="nav-link" href="#pk">Donate </a>                       
+                                    
+                                </li>
+                            <li class="nav-item pull-right" *ngIf="!isDocumentation()">
+                                    <div ngbDropdown class="d-inline-block dropdown">
+                                            <a class="nav-link" id="media" ngbDropdownToggle>Media</a>
+                                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+                                              <a class="dropdown-item" [routerLink]="['/signup']">Audio</a>
+                                              <a class="dropdown-item">Video</a>
+                                              <a class="dropdown-item">Photos</a>
+                                            
+                                            </div>
+                                          </div>                    
+                                    
+                                </li>
+                                <li class="nav-item pull-right" *ngIf="!isDocumentation()">
+                                        <div ngbDropdown class="d-inline-block dropdown">
+                                                <a class="nav-link" id="contactUs" ngbDropdownToggle>Contact Us</a>
+                                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+                                                  <a class="dropdown-item">Volunteer Signup</a>   
+                                                  <a [routerLink]="['/enquiry']"  class="dropdown-item">Give Feedback</a>                                                
+                                                
+                                                </div>
+                                              </div>                    
+                                        
+                                    </li>
+                <li class="nav-item pull-right" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/people/Iskcon-Okc/100014757302540" target="_blank">
+                        <i class="fa fa-facebook-square"></i>
+                        <p class="d-lg-none">Facebook</p>
+                    </a>
+                </li>
+                <!-- <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                        <p class="d-lg-none">Instagram</p>
+                    </a>
+                </li> 
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="https://www.github.com/CreativeTimOfficial/pk2-angular" target="_blank">
+                        <i class="fa fa-github"></i>
+                        <p class="d-lg-none">GitHub</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a href="http://pk2-angular.creative-tim.com/documentation/tutorial" class="nav-link" target="_blank"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
+                </li>
+                <!-- <li class="nav-item" *ngIf="isHome()">
+                    <a href="https://www.creative-tim.com/product/paper-kit-2-pro?ref=pk2-free-local" target="_blank" class="btn btn-danger btn-round disabled">Upgrade to Pro</a>
+                </li> -->
+                <li class="nav-item" *ngIf="!isHome()">
+                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link"><i class="nc-icon nc-layout-11"></i>Components</a>
+                    <a [routerLink]="['/home']" *ngIf="isDocumentation()" class="nav-link">Back to Kit</a>
+                </li>
+                <li class="nav-item" *ngIf="isDocumentation()">
+                    <a href="https://github.com/creativetimofficial/pk-free-angular/issues?ref=pk2-free-local" target="_blank" class="nav-link">Have an issue</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

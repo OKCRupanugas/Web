@@ -1,0 +1,136 @@
+
+<div class="section landing-section">
+<div class="container">
+    <div class="row">
+            
+        <div class="col-md-12 mr-auto ml-auto">
+                <form class="register-form" novalidate [formGroup] = "guestForm" (ngSubmit)="RegisterGuest()">
+           
+                <h3 class="title col-md-12 text-center">Welcome Please Register</h3>
+                <div class="container card-register" style="max-width: 950px;">
+                        <div class="panel panel-primary">                         
+                           
+                            <div class="panel-body">
+                                <div class="alert  text-center title">
+                                    Create new account.
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-md-offset-1">
+
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-md-6 col-left">
+                                                    <div class="form-group">
+                                                        <label for="username">Username</label>
+                                                        <input type="text" class="form-control" placeholder="Username" id="username" name="username" formControlName="username" >
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="firstname">First Name</label>
+                                                        <input type="text" class="form-control" placeholder="First Name" id="firstname" name="firstname" formControlName="firstname">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="lastname">Last Name</label>
+                                                        <input type="text" class="form-control"
+                                                               placeholder="Last Name" id="lastname" name="lastname" formControlName="lastname">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="phone"> Phone</label>
+                                                        <input type="text" class="form-control"
+                                                               placeholder="Phone" id="phone" name="phone" formControlName="phone">
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-6 col-right ">
+                                                    <div class="form-group">
+                                                        <label for="email">Email</label>
+                                                        <input type="text" class="form-control" placeholder="Email" id="email" name="email" formControlName="email">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="confirmemail">Confirm Email</label>
+                                                        <input type="text" class="form-control" placeholder="Confirm Email" id="confirmemail" name="confirmemail" formControlName="confirmemail">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="password">Password</label>
+                                                        <input type="password" class="form-control" placeholder="Password" id="password" name="password" formControlName="password">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="confirmpassword">Confirm Password</label>
+                                                        <input type="password" class="form-control" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword" formControlName="confirmpassword">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="row center">
+                                    <div class="col-md-12  center-block"  >
+                                        <div class="form-group" >
+                                            <button class="btn btn-round">Register</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                                </div>
+                            </div>
+               
+                       
+                    
+                
+                <div class="forgot">
+                    <a href="#" class="btn btn-link btn-danger">Forgot password?</a>
+                </div>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Email ID</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let guest of guests">
+                        <th scope="row">{{guest.guestInfoId}}</th>
+                        <td>{{guest.firstName}}</td>
+                        <td>{{guest.lastName}}</td>
+                        <td>@{{guest.emailAddress}}</td>
+                      </tr>                     
+                    </tbody>
+                  </table>
+
+                  <div>
+                    <h3 class="title col-md-12 text-center">Web Guests</h3> 
+                  </div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Email ID</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let guest of webGuests">
+                        <th scope="row">{{guest.guestInfoId}}</th>
+                        <td>{{guest.firstName}}</td>
+                        <td>{{guest.lastName}}</td>
+                        <td>@{{guest.emailAddress}}</td>
+                      </tr>                     
+                    </tbody>
+                  </table>
+
+            </form>
+           
+        </div>
+    </div>
+    
+</div>  
+</div>

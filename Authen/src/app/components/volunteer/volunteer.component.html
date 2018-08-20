@@ -1,0 +1,93 @@
+<div class="wrapper">
+    <div class="page-header" style="background-image: url('../assets/img/Iskcon/tovp-night-view.jpg');">
+<!-- <div class="section landing-section"> --> 
+  <div class="container">
+      <div class="row">
+              
+          <div class="col-md-12 mr-auto ml-auto">
+                  <form class="register-form" novalidate  [formGroup] = "volunteerForm" (ngSubmit)="RegisterVolunteer()">            
+                 
+                  <div class="container card-register center-content" style="max-width: 750px;">
+                          <div class="panel panel-primary">                         
+                             
+                              <div class="panel-body ">
+                                  <div class="alert  text-center title mycolor" >
+                                     Volunteer For Service
+                                  </div>
+                                  <div class="row ">
+                                      <div class="col-md-12 col-md-offset-1">
+  
+                                          <div class="panel-body">
+                                              <div class="row ">
+                                                  <div class="col-md-6 col-left">
+                                                      <div class="form-group">
+                                                          <label for="volname" class="" >Name</label>
+                                                          <input type="text" class=" form-control"  placeholder="Name" id="volname" name="volname" formControlName="volname" >
+                                                          <div *ngIf="volname.invalid && (volname.dirty || volname.touched)"  class="alert alert-danger">
+                                                                <div *ngIf="volname.errors.required">
+                                                                    Name is required.
+                                                                </div>
+                                                                <div *ngIf="volname.errors.minlength">
+                                                                    Name must be at least 4 characters long.
+                                                                </div>                                                               
+                                                                </div>
+                                                      </div>
+                                                      <div class=" form-group">
+                                                          <label for="email" class="">Email</label>
+                                                          <input type="text" class=" form-control" placeholder="email@sample.com" id="email" name="email" formControlName="email" >
+                                                            <div *ngIf="email.invalid && (email.dirty || email.touched)"  class="alert alert-danger">
+                                                                <div *ngIf="email.errors.required">
+                                                                    Email is required.
+                                                                </div>
+                                                                <div *ngIf="email.errors.pattern">
+                                                                    Invalid Email Address.
+                                                                </div>    
+                                                            </div>                      
+                                                      </div>                                                     
+  
+                                                      <div class=" form-group">
+                                                          <label for="phone" class=""> Phone</label>
+                                                          <input type="text" class=" form-control" placeholder="123-456-7890" id="phone" name="phone" formControlName="phone" >
+                                                          <div *ngIf="phone.invalid && (phone.dirty || phone.touched)"  class="alert alert-danger">
+                                                                <div *ngIf="phone.errors.required">
+                                                                    Phone Number is required.
+                                                                </div>
+                                                                <div *ngIf="phone.errors.pattern">
+                                                                    Invalid Phone Number.
+                                                                </div>    
+                                                            </div>   
+                                                      </div>
+                                                      <div class=" form-group">
+                                                        <label for="services">Intrested in</label>
+                                                        <ngx-select-dropdown [multiple]="true" name="services" [(value)]="dataModel"  (change)="onItemSelect($event)"  [config]="config"  [options]="dropdownList" ></ngx-select-dropdown>
+                                                    </div>
+  
+                                                  </div>  
+                                              </div>
+  
+                                          </div>
+  
+                                      </div>
+  
+                                  </div>
+                                  <div class="row  ">
+                                      <div class="col-md-12  "  >
+                                          <div class="form-group " >
+                                              <button class="btn btn-round center-fields btn-info" [disabled] = "!volunteerForm.valid" >Register</button>
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                              </div>
+  
+                                  </div>
+                              </div>
+              </form>
+             
+          </div>
+      </div>
+      
+  <!--        </div>-->  
+ </div> 
+</div>  
+</div>

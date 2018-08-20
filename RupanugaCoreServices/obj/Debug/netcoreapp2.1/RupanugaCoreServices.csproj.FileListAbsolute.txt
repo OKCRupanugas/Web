@@ -1,0 +1,11 @@
+D:\Work\Authen\RupanugaCoreServices\bin\Debug\netcoreapp2.1\RupanugaCoreServices.deps.json
+D:\Work\Authen\RupanugaCoreServices\bin\Debug\netcoreapp2.1\RupanugaCoreServices.runtimeconfig.json
+D:\Work\Authen\RupanugaCoreServices\bin\Debug\netcoreapp2.1\RupanugaCoreServices.runtimeconfig.dev.json
+D:\Work\Authen\RupanugaCoreServices\bin\Debug\netcoreapp2.1\RupanugaCoreServices.dll
+D:\Work\Authen\RupanugaCoreServices\bin\Debug\netcoreapp2.1\RupanugaCoreServices.pdb
+D:\Work\Authen\RupanugaCoreServices\obj\Debug\netcoreapp2.1\RupanugaCoreServices.csprojAssemblyReference.cache
+D:\Work\Authen\RupanugaCoreServices\obj\Debug\netcoreapp2.1\RupanugaCoreServices.csproj.CoreCompileInputs.cache
+D:\Work\Authen\RupanugaCoreServices\obj\Debug\netcoreapp2.1\RupanugaCoreServices.AssemblyInfoInputs.cache
+D:\Work\Authen\RupanugaCoreServices\obj\Debug\netcoreapp2.1\RupanugaCoreServices.AssemblyInfo.cs
+D:\Work\Authen\RupanugaCoreServices\obj\Debug\netcoreapp2.1\RupanugaCoreServices.dll
+D:\Work\Authen\RupanugaCoreServices\obj\Debug\netcoreapp2.1\RupanugaCoreServices.pdb

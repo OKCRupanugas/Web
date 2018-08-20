@@ -1,0 +1,17 @@
+D:\Work\Authen\Services\obj\Debug\ISKCONServices.csproj.CoreCompileInputs.cache
+D:\Work\Authen\Services\bin\Debug\IKSCONOKCServices.dll.config
+D:\Work\Authen\Services\bin\Debug\IKSCONOKCServices.dll
+D:\Work\Authen\Services\bin\Debug\IKSCONOKCServices.pdb
+D:\Work\Authen\Services\bin\Debug\EntityFramework.dll
+D:\Work\Authen\Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\Work\Authen\Services\bin\Debug\EntityFramework.xml
+D:\Work\Authen\Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\Work\Authen\Services\obj\Debug\ISKCONServices.csproj.CopyComplete
+D:\Work\Authen\Services\obj\Debug\IKSCONOKCServices.dll
+D:\Work\Authen\Services\obj\Debug\IKSCONOKCServices.pdb
+D:\Work\Authen\Services\bin\Debug\System.Data.SqlClient.dll
+D:\Work\Authen\Services\bin\Debug\System.Data.SqlServerCe.dll
+D:\Work\Authen\Services\obj\Debug\ISKCONServices.csprojAssemblyReference.cache
+D:\Work\Authen\Services\bin\Debug\System.Data.SQLite.dll
+D:\Work\Authen\Services\bin\Debug\System.Data.SQLite.xml
+D:\Work\Authen\Services\bin\Debug\System.Data.SQLite.dll.config
